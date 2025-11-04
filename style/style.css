@@ -93,9 +93,9 @@ nav{
     margin-bottom: 28px;
 }
 .painel{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns:  [rede-inicio] 40px [rede-end contactme-inicio] 20px [conteudo-inicio] auto [conteudo-end];
+    /* grid-template-rows: ; */
 }
 .conteudo{
     --background-color: white;
@@ -103,6 +103,7 @@ nav{
     width: 1380px;
 }
 .contact-me{
+    grid-column: ;
     height: 5px;
     width: 10px;
     margin: 0;
