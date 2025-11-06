@@ -10,6 +10,45 @@
   font-weight: normal;
   font-style: normal;
 }
+.localizacao{
+    display: flex;
+    justify-content: center;
+    font-size: 30px-;
+}
+.cabecalho{
+    display: grid;
+    grid-template-columns: [button-inicio] 40% [button-end titulo-inicio] 20% [titulo-end espaco-inico] 40% [espaco-end];
+    grid-template-rows: [cabecalho-inicio]80px [cabecalho-end];
+}
+.home{
+    grid-column: buttonHome-inicio / buttonHome-end;
+}
+.sobre{
+    grid-column: buttonSobre-inicio / buttonSobre-end;
+}
+.projetos{
+    grid-column: buttonProjetos-inicio / buttonProjetos-end;
+}
+.contato{
+    grid-column: buttonContato-inicio / buttonContato-end;
+}
+.titulo{
+    grid-column: titulo-inicio / titulo-end;
+    font-size: 30px;
+}
+.titulo-inicio{
+    display: flex;
+    justify-content: center;
+}
+.buttons{
+    grid-columns: button-inicio / button-end;
+    grid-row: cabecalho-inicio / cabecalho-end;
+    display: grid;
+    grid-template-columns:[buttonHome-inicio] 124px [buttonHome-end buttonSobre-inicio] 124px [buttonSobre-end buttonProjetos-inicio  ] 124px [buttonProjetos-end buttonContato-inicio] 124px [buttonContato-end] ;
+
+    padding-inline-start: 30px;
+    
+}
 a{
     text-decoration: none;
     outline: none;
@@ -20,32 +59,13 @@ body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-nav{
-    position: relative;
-    display: flex;
-    height: 100px;
-}
+
 /* .home, .sobre, .projetos, .contato{
 } */
-.titulo{
-    position: absolute;
-    top: 0%;
-    left: 47%;
-    font-size: 30px;
 
-}
-.buttons{
-    position: absolute;
-    top:0px;
-    left: 20px;
-    display: flex;
-    padding-inline-start: 30px;
-    gap: 20px;
-    
-}
+
 .button{
-    margin-left: 20px;
-    margin-right: 20px;
+    text-align: center;
     margin-top: 40px;
     color: white;
 
@@ -54,21 +74,51 @@ nav{
     color: goldenrod;
     background-color: #1d1d1d;
 }
+.projeto-atalho{
+    display: flex;
+    justify-content: center;
+}
 .button-projetos{
-    left: 44%;
+    width: 100px;
+    display: flex;
+    justify-self: center;
     text-decoration: none;
     padding: 20px 35px;
     background-color: #393A3B;
     color: white;
     text-align: center;
-    position: absolute;
+    margin-top: 20px;
 
 }
+.mouse-icon{
+    height: 80px;
+}
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+
 .button-projetos:hover{
     background-color: aliceblue;
     color: #393A3B;
 }
+
+.linkedin, .instagram, .git{
+    height: 22px;
+    margin-bottom: 26px;
+
+}
+.email{
+    height: 13px;
+    margin-bottom: 28px;
+}
+.painel{
+    display: grid;
+    grid-template-columns:  [rede-inicio] 40px [rede-end contactme-inicio] 20px [contactme-end conteudo-inicio] auto [conteudo-end];
+    /* grid-template-rows: ; */
+}
 .contact{
+    grid-column: rede-inicio / rede-end;
     margin-bottom: 70px;
     margin-left: 0;
     height: 90px;
@@ -83,46 +133,29 @@ nav{
     float: right;
 
 }
-.linkedin, .instagram, .git{
-    height: 22px;
-    margin-bottom: 26px;
-
-}
-.email{
-    height: 13px;
-    margin-bottom: 28px;
-}
-.painel{
-    display: grid;
-    grid-template-columns:  [rede-inicio] 40px [rede-end contactme-inicio] 20px [conteudo-inicio] auto [conteudo-end];
-    /* grid-template-rows: ; */
-}
 .conteudo{
+    grid-column: conteudo-inicio / conteudo-end;
     --background-color: white;
     height: 450px;
     width: 1380px;
 }
 .contact-me{
-    grid-column: ;
+    grid-column: contactme-inicio / contactme-end;
     height: 5px;
     width: 10px;
-    margin: 0;
-    position: absolute;
-    top: 138px;
-    left: 48px;
-    font-size: 12px;
+    margin-inline: 10px ;
+    padding-top: 130px;
+    font-size: 12px;;
     text-align: center;
 }
 .me{
     margin-top: 2px;
     height: 1px;
 }
-.mouse-icon{
-    position:absolute;
-    height: 80px;
-    left: 48%;
-    margin-top: 90px;
-}
+/* .conjunto-button{
+    display:flex
+} */
+
 .painel-sobre{
     margin-top: 350px;
     text-align: center;
