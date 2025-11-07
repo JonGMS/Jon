@@ -10,6 +10,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@media (max-width: 900px) {
+    
+    .conteudo-variaveis{
+        display: block;
+    }
+}
 .localizacao{
     display: flex;
     justify-content: center;
@@ -191,13 +197,7 @@ body{
     font-family: 'Montserrat-thin';
 }
 
-.painel-competencias{
-    height: 600px;
-    width: 860px;
-    position: absolute;
-    left: 20%;
-    display: flex;
-}
+
 .titulo-container{
     font-size: 22px;
     letter-spacing: 12px;
@@ -234,10 +234,7 @@ body{
     position: absolute;
     top: 36px;
 }
-.conheca{
-    margin-left: 40px;
-    
-}
+
 .conheca-me{
     font-size: 15px;
     font-family: Montserrat-thin;
@@ -261,3 +258,18 @@ body{
     color: #393A3B;
 }
 
+.conjunto-sobre{
+    display: grid;
+    grid-template-columns: [hard-inicio]400px[hard-end conheca-inicio] 400px [conheca-end];
+}
+.painel-margens{
+    /* margin-inline: 20%; */
+}
+.conheca{
+    grid-column: conheca-inicio / conheca-end;
+
+    
+}
+.painel-competencias{
+    grid-column: hard-inicio / hard-end;
+}
